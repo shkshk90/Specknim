@@ -15,9 +15,9 @@ const
   cipherRounds*      = rounds - 1
 
   usage*             = """
-Usage: speck  [-[e|d]] [-hv]
-              [-s 'text'] [-f text file]
-              [-k 'key'] [-K key file] """
+Usage: specknim   [-[e|d]] [-hv]
+                  [-s 'text'] [-f text file]
+                  [-k 'key'] [-K key file] """
   help*              = usage & """
   Command summary:
       -e                  Encrypt
@@ -29,4 +29,4 @@ Usage: speck  [-[e|d]] [-hv]
       -k                  Key string
       -K                  File containing the key """
   version*           = """
-Speck version 0.1 """
+Specknim version 0.2 """
