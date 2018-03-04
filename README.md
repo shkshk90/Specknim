@@ -61,6 +61,6 @@ This software was created as a hobby and is not guaranteed to provide any securi
 
 ## License
 
-This project is licensed under the BSD 2-Clause "Simplified" License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the BSD 2-Clause "Simplified" License - see the [LICENSE](LICENSE) file for details
 
 
