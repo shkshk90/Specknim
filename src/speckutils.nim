@@ -1,4 +1,5 @@
-import constants, sequtils
+import constants, sequtils, strutils
+
 
 proc generateKeyBlocks*(keyString: string): array[keyWords, uint64] =
   let slen = keyString.len

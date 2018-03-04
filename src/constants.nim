@@ -7,8 +7,9 @@ const
   beta*              = 3
   rounds*            = 34
 
-  blockBytes*        = blockSize div 8
-  wordBytes*         = wordSize div 8
+  keyBytes*          = keySize    div 8
+  blockBytes*        = blockSize  div 8
+  wordBytes*         = wordSize   div 8
 
   mask*              = 255
   cipherRounds*      = rounds - 1

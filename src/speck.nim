@@ -67,8 +67,6 @@ proc decryptOneBlock(cipherText: array[2, uint64], expandedKey: array[rounds, ui
   result[0] = y
 
 
-
-
 proc encrypt(plaintext: string, key: string): string =
   var plaintext           = plaintext
 
@@ -80,12 +78,13 @@ proc encrypt(plaintext: string, key: string): string =
   proc(blk: array[2, uint64]): array[2, uint64] = result = encryptOneBlock(blk, expandedKey))
 
   result = generateStringFromBlocks ciphertextBlocks
+  result = result.toHex
 
 
 proc decrypt(ciphertext: string, key: string): string =
   assert(ciphertext.len mod blockBytes == 0)
 
-  var ciphertext          = ciphertext
+  var ciphertext          = ciphertext.parseHexStr
 
   let ciphertextBlocks    = generateTextBlocks ciphertext
   let keyBlocks           = generateKeyBlocks key
